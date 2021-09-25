@@ -1,0 +1,47 @@
+@import "./assets/_config.scss";
+
+header {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: black;
+    color: $white;
+    height: 70px;
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    @include translateY(-50%);
+}
+
+nav,
+nav ul, 
+nav ul li {
+    margin: 0;
+    padding: 5px;
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    @include translateY(-50%);
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+
+    &.last {
+        margin: 0;
+    }
+
+    a {
+        font-size: 15px;
+        line-height: normal;
+        color: $white;
+    }
+}

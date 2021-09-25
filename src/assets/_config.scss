@@ -1,0 +1,26 @@
+$black: #010000;
+$white: #ffffff;
+$lightGrey: #e6e6e6;
+$darkGrey: #333;
+$red: #ff1755;
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: $black;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin translateY($e) {
+    -webkit-transform: translateY($e);
+    -moz-transform: translateY($e);
+    transform: translateY($e);
+}
+
+@mixin transition($e) {
+    -webkit-transition: $e;
+    -moz-transition: $e;
+    transition: $e;
+}
