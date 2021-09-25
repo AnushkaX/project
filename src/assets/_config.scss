@@ -11,6 +11,7 @@ body {
     color: $black;
     font-weight: 400;
     font-style: normal;
+    background-color: #000000;
 }
 
 a {
@@ -19,7 +20,7 @@ a {
     cursor: pointer;
 
     &:hover {
-        color: $red;
+        color: #f8f9fa;
         transition: all 0.4s ease-in-out;
     }
 }
@@ -27,6 +28,16 @@ a {
 .container-fluid {
     padding-top: 10px;
     line-height: 24px;;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.topic {
+    color: #f8f9fa;
+}
+
+.para {
+    color: #dee2e6;
 }
 
 @mixin translateY($e) {

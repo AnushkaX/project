@@ -1,3 +1,5 @@
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 const Header = () => {
     return (
         <header>
@@ -7,10 +9,10 @@ const Header = () => {
             <nav>
                 <ul>
                     <li className="first">
-                        <a href="#">Home</a>
+                        <Link to='/'>Home</Link>
                     </li>
                     <li>
-                        <a href="#">Products</a>
+                        <Link to='/posts'>Posts</Link>
                     </li>
                     <li className="last">
                         <a href="#">Contact</a>
