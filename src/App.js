@@ -1,16 +1,23 @@
 import Header from './components/Header';
-import Footer from './components/Footer';
 import HomePage from './components/pages/homePage';
+import PostsPage from './components/pages/posts';
+
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-        <HomePage />
-      <Footer />
-    </div>
+      <Router>
+        <div className="App">
+          <Header />
+
+          <Route exact path='/' component={HomePage} />
+          <Route exact path='/posts' component={PostsPage} />
+
+        </div>
+      </Router>
+    
   );
 }
 

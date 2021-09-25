@@ -13,6 +13,22 @@ body {
     font-style: normal;
 }
 
+a {
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        color: $red;
+        transition: all 0.4s ease-in-out;
+    }
+}
+
+.container-fluid {
+    padding-top: 10px;
+    line-height: 24px;;
+}
+
 @mixin translateY($e) {
     -webkit-transform: translateY($e);
     -moz-transform: translateY($e);
@@ -23,4 +39,11 @@ body {
     -webkit-transition: $e;
     -moz-transition: $e;
     transition: $e;
+}
+
+@mixin transition($for: all, $time-in: 250ms, $type: ease-in-out, $time-out: 0s) {
+    transition: $for $time-in $type $time-out;
+    -moz-transition: $for $time-in $type $time-out;
+    -webkit-transition: $for $time-in $type $time-out;
+    -o-transition: $for $time-in $type $time-out;
 }
