@@ -1,6 +1,6 @@
 const PostsPage = () => {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid content-box">
             <h1>
                 Posts
             </h1>

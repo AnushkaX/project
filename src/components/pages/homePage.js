@@ -1,6 +1,6 @@
 const HomePage = () => {
     return (
-        <div className="container-fluid">
+        <div className="container-fluid content-box">
             <h1 className="topic">
                 Home Page Content
             </h1>

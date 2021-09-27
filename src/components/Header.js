@@ -6,6 +6,14 @@ const Header = () => {
             <div className = "logo">
                 LOGO
             </div>
+            <div className="theme-options">
+                <div id='theme-white'/>
+                <div id='theme-blue'/>
+                <div id='theme-orange'/>
+                <div id='theme-purple'/>
+                <div id='theme-green'/>
+                <div id='theme-black'/>
+            </div>
             <nav>
                 <ul>
                     <li className="first">
